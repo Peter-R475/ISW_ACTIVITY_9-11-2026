@@ -1,0 +1,138 @@
+{
+    "General": [
+        {
+            "label": "Student ID",
+            "name": "student_id",
+            "type": "number",
+            "required": false
+        },
+        {
+            "label": "Student Name",
+            "name": "student_name",
+            "type": "text",
+            "required": false
+        },
+        {
+            "label": "Satisfaction",
+            "name": "Overall_satisfaction",
+            "type": "rating",
+            "required": false,
+            "options": [
+                {
+                    "value": "1",
+                    "text": "Most Dissatisfied\n1"
+                },
+                {
+                    "value": "2",
+                    "text": "Dissatisfied\n2"
+                },
+                {
+                    "value": "3",
+                    "text": "Neutral\n3"
+                },
+                {
+                    "value": "4",
+                    "text": "Satisfied\n4"
+                },
+                {
+                    "value": "5",
+                    "text": "Most Satisfied\n5"
+                }
+            ]
+        },
+        {
+            "label": "Comment",
+            "name": "comment",
+            "type": "textarea",
+            "required": false
+        }
+    ],
+    "GLO 1-1": [
+        {
+            "label": "label00",
+            "name": "q0",
+            "type": "rating",
+            "required": true,
+            "options": [
+                {
+                    "value": "5",
+                    "text": ""
+                },
+                {
+                    "value": "4",
+                    "text": ""
+                },
+                {
+                    "value": "3",
+                    "text": ""
+                },
+                {
+                    "value": "2",
+                    "text": ""
+                },
+                {
+                    "value": "1",
+                    "text": ""
+                }
+            ]
+        },
+        {
+            "label": "label00",
+            "name": "q1",
+            "type": "rating",
+            "required": true,
+            "options": [
+                {
+                    "value": "5",
+                    "text": ""
+                },
+                {
+                    "value": "4",
+                    "text": ""
+                },
+                {
+                    "value": "3",
+                    "text": ""
+                },
+                {
+                    "value": "2",
+                    "text": ""
+                },
+                {
+                    "value": "1",
+                    "text": ""
+                }
+            ]
+        }
+    ],
+    "GLO 1-2": [
+        {
+            "label": "label00",
+            "name": "q2",
+            "type": "rating",
+            "required": true,
+            "options": [
+                {
+                    "value": "5",
+                    "text": ""
+                },
+                {
+                    "value": "4",
+                    "text": ""
+                },
+                {
+                    "value": "3",
+                    "text": ""
+                },
+                {
+                    "value": "2",
+                    "text": ""
+                },
+                {
+                    "value": "1",
+                    "text": ""
+                }
+            ]
+        }
+    ]
+}

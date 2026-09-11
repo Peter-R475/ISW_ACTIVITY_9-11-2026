@@ -1,0 +1,128 @@
+:root {
+    --bg-gradient: linear-gradient(135deg, #eef2f7 0%, #d6e4f0 100%);
+    --card-bg: #ffffff;
+    --text-primary: #1e293b;
+    --border-color: #e2e8f0;
+    --th-bg: #4CAF50;
+    --btn-bg: #4CAF50;
+    --btn-hover: #45a049;
+    --shadow-main: 0 10px 30px rgba(15, 23, 42, 0.08), 0 1px 8px rgba(15, 23, 42, 0.04);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg-gradient: linear-gradient(135deg, #eef2f7 0%, #d6e4f0 100%);
+        --card-bg: #ffffff;
+        --text-primary: #1e293b;
+        --border-color: #e2e8f0;
+        --th-bg: #f8fafc;
+        --btn-bg: #4CAF50;
+        --btn-hover: #45a049;
+        --shadow-main: 0 10px 30px rgba(15, 23, 42, 0.08), 0 1px 8px rgba(15, 23, 42, 0.04);
+    }
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+    background: var(--bg-gradient);
+    color: var(--text-primary);
+}
+
+/* Updated selector to match HTML: .activity-container instead of .card */
+.activity-container {
+    background-color: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow-main);
+    width: 100%;
+    max-width: 900px;
+    box-sizing: border-box;
+}
+
+h3 {
+    color: var(--text-primary);
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+/* Right-align layout wrapper for action buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--btn-bg);
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    box-sizing: border-box;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+    margin-bottom: 1.5rem;
+    float: right;
+    /* Aligns button to the right */
+}
+
+.btn:hover {
+    background-color: var(--btn-hover);
+}
+
+.btn:active {
+    transform: scale(0.98);
+}
+
+/* Clear fix for floated button */
+.activity-container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Horizontal scroll wrapper for mobile table responsiveness */
+#activityTableContainer {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    white-space: nowrap;
+    /* Prevents text awkward wrapping in small columns */
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid var(--border-color);
+}
+
+th {
+    background-color: var(--th-bg);
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* Mobile responsive padding adjustment */
+@media (max-width: 600px) {
+    .activity-container {
+        padding: 1.25rem;
+        border-radius: 12px;
+    }
+
+    .btn {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+}
