@@ -13,7 +13,7 @@
             "required": false
         },
         {
-            "label": "Satisfaction",
+            "label": "rating",
             "name": "Overall_satisfaction",
             "type": "rating",
             "required": false,
@@ -39,15 +39,9 @@
                     "text": "Most Satisfied\n5"
                 }
             ]
-        },
-        {
-            "label": "Comment",
-            "name": "comment",
-            "type": "textarea",
-            "required": false
         }
     ],
-    "GLO 1-1": [
+    "GLO 2-1": [
         {
             "label": "label00",
             "name": "q0",
@@ -75,40 +69,12 @@
                     "text": ""
                 }
             ]
-        },
+        }
+    ],
+    "GLO 3-2": [
         {
             "label": "label00",
             "name": "q1",
-            "type": "rating",
-            "required": true,
-            "options": [
-                {
-                    "value": "5",
-                    "text": ""
-                },
-                {
-                    "value": "4",
-                    "text": ""
-                },
-                {
-                    "value": "3",
-                    "text": ""
-                },
-                {
-                    "value": "2",
-                    "text": ""
-                },
-                {
-                    "value": "1",
-                    "text": ""
-                }
-            ]
-        }
-    ],
-    "GLO 1-2": [
-        {
-            "label": "label00",
-            "name": "q2",
             "type": "rating",
             "required": true,
             "options": [
